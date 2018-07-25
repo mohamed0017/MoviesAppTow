@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.movies.test.moviesapp2.activity.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/favoriteTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingLinear"
+                    android:text="@string/MoveTitle"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/favoriteRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingLinear"
+                    android:text="@string/releaseData"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/RatingDimens"
+                        android:layout_height="@dimen/RatingDimens"
+                        android:layout_marginBottom="@dimen/paddingLinear"
+                        android:layout_marginEnd="@dimen/paddingLinear"
+                        android:layout_marginStart="@dimen/paddingLinear"
+                        android:layout_marginTop="@dimen/paddingLinear"
+                        android:src="@drawable/star_icon" />
+
+                    <TextView
+                        android:id="@+id/favoriteRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/paddingRating"
+                        android:text="@string/rate"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear"
+            android:text="@string/description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textDes" />
+
+        <TextView
+            android:id="@+id/favoriteOverView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImgHeight">250dp</dimen>
+    <dimen name="paddingLinear">8dp</dimen>
+    <dimen name="ImgPosterWidth">98dp</dimen>
+    <dimen name="ImgPosterHeight">145dp</dimen>
+    <dimen name="RatingDimens">30dp</dimen>
+    <dimen name="paddingRating">15dp</dimen>
+    <dimen name="textDes">20sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+</resources>

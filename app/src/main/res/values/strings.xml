@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">movies app2</string>
+
+    <string name="sort">Sort By</string>
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="sort_title">Sort movies by</string>
+    <string name="key_sort">key sort</string>
+    <string name="summary_sort">sort </string>
+    <string name="rate">6.7</string>
+    <string name="description">description</string>
+    <string name="releaseData">release data</string>
+    <string name="MoveTitle">Move title</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="poupler">poupler</string>
+    <string name="top_rate">Top Rate</string>
+    <string name="pouplar">pouplar</string>
+    <string name="popular">popular</string>
+    <string name="trailers">Trailers</string>
+    <string name="favorite">Add To Favorite</string>
+    <string name="favorites">favorites</string>
+    <string name="rating">Rating</string>
+    <string name="author">Written  By: </string>
+</resources>

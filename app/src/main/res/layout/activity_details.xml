@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context="com.movies.test.moviesapp2.activity.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageBgDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImgHeight"
+            app:srcCompat="@drawable/expendables" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear">
+
+            <ImageView
+                android:id="@+id/imagePosterDetails"
+                android:layout_width="@dimen/ImgPosterWidth"
+                android:layout_height="@dimen/ImgPosterHeight"
+                app:srcCompat="@drawable/expendables" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textTitleDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingLinear"
+                    android:text="@string/MoveTitle"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textReleaseDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingLinear"
+                    android:text="@string/releaseData"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/RatingDimens"
+                        android:layout_height="@dimen/RatingDimens"
+                        android:layout_marginBottom="@dimen/paddingLinear"
+                        android:layout_marginEnd="@dimen/paddingLinear"
+                        android:layout_marginStart="@dimen/paddingLinear"
+                        android:layout_marginTop="@dimen/paddingLinear"
+                        android:src="@drawable/star_icon" />
+
+                    <TextView
+                        android:id="@+id/ratingDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/paddingRating"
+                        android:text="@string/rate"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favorite"
+                        android:padding="@dimen/margin8"
+                        android:layout_marginEnd="@dimen/margin8"
+                        android:textColor="@color/white"/>
+                    <ImageView
+                        android:id="@+id/favoriteWhite"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin40"
+                        android:src="@drawable/hart_white"
+                        />
+                    <ImageView
+                        android:id="@+id/favoriteRed"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="@dimen/margin40"
+                        android:src="@drawable/hart"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear"
+            android:text="@string/description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textDes" />
+
+        <TextView
+            android:id="@+id/textOverViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLinear"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trailers"
+            android:textSize="@dimen/textDes"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:padding="@dimen/paddingLinear" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/videosRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rating"
+            android:textSize="@dimen/textDes"
+            android:textColor="@color/white"
+            android:padding="@dimen/paddingLinear"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RatingRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+</ScrollView>
